@@ -33,7 +33,7 @@ $Recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <div class="headerdiv">
         <div><img src="images/Logorecept.png" width="160" height="70"></div>           
         <ul>
-            <li><a class="active" href="#home">Trending</a></li>
+            <li><a class="active" href="#home">Home</a></li>
             <li><a href="#Sales">Sales</a></li>
             <li><a href="#Shopping cart">Shopping cart</a></li>
             <li><a href="#Contact">contact</a></li>
