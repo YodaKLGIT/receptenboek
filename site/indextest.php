@@ -44,9 +44,10 @@ $Recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 <!-- title & content -->
       <section class="header-content">
 
-      <div class="roundedimg"><img src="images/collage.png" width="700" height="450"></div>
-        
       <div class ="aboveTitle">Echte Welsche Recepten</div>
+      <div class="collegeimg"><img src="images/collage.png" width="700" height="450"></div>
+        
+      
 
 <?php foreach ($Recepten as $Recept) : ?>
     <section class="divcontainer"> 
