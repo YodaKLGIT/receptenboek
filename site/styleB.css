@@ -186,10 +186,12 @@ a:visited {
 
 .button:hover {
   background: linear-gradient(132deg, #ff00f7, #ff007b, #ff0000);
-  border-radius: 20px;
-  
+  border-radius: 20px; 
 }
-
 .collegeimg{
   margin-bottom: 50px;
+}
+
+button:active{
+  --sql-query: SELECT 
 }
