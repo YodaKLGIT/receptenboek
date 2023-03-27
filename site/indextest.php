@@ -43,6 +43,16 @@ $Recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
       <div class ="aboveTitle">Echte Welsche Recepten</div>
       <div class="collegeimg"><img src="images/collage.png" width="700" height="450"></div>
+
+      <div class="divcontainer">
+        <section class="row">
+              <div class="description">
+                <button type="button">Sort By Time</button>
+                <button type="button">Sort By difficulty</button>
+                <button type="button">Sort By Most ingredients</button>
+              </div>
+        </section>      
+      </div>
         
       
 
