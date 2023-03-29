@@ -6,17 +6,7 @@ main {
   height: 1572px;
 }
 
-nav{
-  background-color: rgb(255, 72, 0);
-  height: 30px;
-}
-
 header {
-  background-color: rgb(255, 85, 0);
-  height: 100px;
-}
-
-footer{
   background-color: rgb(255, 85, 0);
   height: 100px;
 }
@@ -86,9 +76,32 @@ li a:hover {
   margin-bottom: 30px;
 
 }
+.divcontainer2 {
+  border: 10px;
+  border-radius: 10px;
+  background: linear-gradient(132deg, #7f07ff, #ff4d3d, #ff00a6);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  display: flex;
+  width: 274px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
+  margin-left: 408px;
+}
 
 .divcontainer>div {
   background-color:rgb(255, 178, 141);
+}
+
+.divcontainer2>div{
+  background: linear-gradient(132deg, #a807ff, #ff7d3d, #ff003c);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
 }
 
 .Title{
@@ -120,6 +133,13 @@ li a:hover {
   display: flex;
   gap: 16px;
   align-items:flex-start;
+}
+
+.row2 {
+  display: flex;
+  gap: 16px;
+  align-items:flex-start;
+  
 }
 
 .column {

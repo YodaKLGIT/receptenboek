@@ -2,13 +2,40 @@
 <?php
 require 'database.php';
 
-$sql = "SELECT * FROM Recepten";
+
+$orderSQL = "";
+
+if(isset($_GET['sort'])){
+  $type  = $_GET['sort'];
+
+  if($type == 'minuten'){
+    $orderSQL= "ORDER BY MinutesINT DESC";
+  }
+
+  if($type == 'prijs'){
+    $orderSQL= "ORDER BY prijs DESC";
+    // var_dump($type);die;
+  }
+
+    if($type == 'moeilijkheid'){
+      $orderSQL= "ORDER BY Moelijkheid DESC";
+    
+  }
+}
+
+
+$sql = "SELECT * FROM Recepten $orderSQL";
 
 $result = mysqli_query($conn,$sql);
 
 $Recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
+
+
+
 ?>
+
+
 
 <link rel="stylesheet" href="styleB.css">
 <link rel="stylesheet" href="style.css">
@@ -44,13 +71,11 @@ $Recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
       <div class ="aboveTitle">Echte Welsche Recepten</div>
       <div class="collegeimg"><img src="images/collage.png" width="700" height="450"></div>
 
-      <div class="divcontainer">
-        <section class="row">
-              <div class="description">
-                <button type="button">Sort By Time</button>
-                <button type="button">Sort By difficulty</button>
-                <button type="button">Sort By Most ingredients</button>
-              </div>
+      <div class="divcontainer2">
+        <section class="row2">      
+                <div class="sort"><a href="indextest.php?sort=minuten">sort by minutes</a></div>
+                <div class="sort"><a href="indextest.php?sort=prijs">sort by price</a></div>
+                <div class="sort"><a href="indextest.php?sort=moeilijkheid">sort by difficulty</a></div>             
         </section>      
       </div>
         
